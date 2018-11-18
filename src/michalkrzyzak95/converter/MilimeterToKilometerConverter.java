@@ -15,6 +15,8 @@ public class MilimeterToKilometerConverter extends Converter {
 
     @Override
     protected boolean accept(DistanceToConvert distance) {
-        return false;
+        Unit currentUnit = distance.getCurrentUnit();
+        Unit destinyUnit = distance.getDestinyUnit();
+        return (unitIn.getCode().equals(currentUnit.getCode()) && unitOut.getCode().equals(destinyUnit.getCode()));
     }
 }

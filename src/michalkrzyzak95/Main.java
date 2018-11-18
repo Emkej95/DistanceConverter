@@ -16,7 +16,7 @@ public class Main {
         Printer printer = new Printer();
         Converter chain = chainFactory.getChain();
 
-        DistanceToConvert distanceToConvert = new DistanceToConvert(Unit.CENTIMETER, 25, Unit.METER);
+        DistanceToConvert distanceToConvert = new DistanceToConvert(Unit.CENTIMETER, 25, Unit.MILIMETER);
 
         ConvertedDistance convertedDistance = chain.convert(distanceToConvert);
         printer.printConvertedDistance(convertedDistance);
