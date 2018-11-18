@@ -6,9 +6,9 @@ public class DistanceToConvert {
     private double currentValue;
     private Unit destinyUnit;
 
-    public DistanceToConvert(Unit currentUnit, double value, Unit destinyUnit) {
+    public DistanceToConvert(Unit currentUnit, double currentValue, Unit destinyUnit) {
         this.currentUnit = currentUnit;
-        this.currentValue = value;
+        this.currentValue = currentValue;
         this.destinyUnit = destinyUnit;
     }
 

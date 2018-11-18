@@ -1,6 +1,7 @@
 package michalkrzyzak95;
 
 import michalkrzyzak95.converter.Converter;
+import michalkrzyzak95.model.ConvertedDistance;
 import michalkrzyzak95.model.DistanceToConvert;
 import michalkrzyzak95.model.Unit;
 
@@ -12,12 +13,12 @@ public class Main {
     public static void main(String[] args) {
 
         ChainFactory chainFactory = new ChainFactory();
+        Printer printer = new Printer();
         Converter chain = chainFactory.getChain();
 
-        DistanceToConvert distanceToConvert = new DistanceToConvert(Unit.METER, 2.4, Unit.CENTIMETER);
+        DistanceToConvert distanceToConvert = new DistanceToConvert(Unit.METER, 2, Unit.CENTIMETER);
 
-        chain.convert(distanceToConvert);
-
-
+        ConvertedDistance convertedDistance = chain.convert(distanceToConvert);
+        printer.printConvertedDistance(convertedDistance);
     }
 }

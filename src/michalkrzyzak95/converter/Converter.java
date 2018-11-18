@@ -10,8 +10,9 @@ public abstract class Converter {
     public ConvertedDistance convert(DistanceToConvert distance){
 
         if (accept(distance)){
+            double currentValue = convert(distance.getCurrentValue());
             double convertedValue = convert(distance.getCurrentValue());
-            return new ConvertedDistance(distance.getDestinyUnit(), convertedValue);
+            return new ConvertedDistance(currentValue, distance.getCurrentUnit(), distance.getDestinyUnit(), convertedValue);
         }else {
             return nextInChain.convert(distance);
         }

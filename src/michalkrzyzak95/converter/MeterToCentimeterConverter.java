@@ -10,7 +10,7 @@ public class MeterToCentimeterConverter extends Converter {
 
     @Override
     protected double convert(Double distance) {
-        return 0;//Zaimplementuj sobie to.
+        return distance*100;
     }
 
     @Override

@@ -4,9 +4,12 @@ public enum Unit {
 
 
     METER("m", "meter"),
-    CENTIMETER("cm", "centimeter");//tutaj przed średnikiem dodaj sobie wszystkie jednostki. Tak jak we wzorze.
-    // FullName możesz wykorzystać do drukowania. Najpierw zrób ja ja, bez wprowadzania, tylko na szytwno zobacz czy działa kod.
-    //później sobie zrób obsługę wejśćia.
+    CENTIMETER("cm", "centimeter"),
+    MILIMETER("mm", "milimeter"),
+    KILOMETER("km", "kilometer");
+    // FullName możesz wykorzystać do drukowania.
+    // Najpierw zrób ja ja, bez wprowadzania, tylko na szytwno zobacz czy działa kod.
+    // Później sobie zrób obsługę wejśćia.
 
     private String code;
     private String fullName;
