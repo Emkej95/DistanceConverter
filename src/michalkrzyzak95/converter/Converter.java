@@ -7,13 +7,12 @@ public abstract class Converter {
 
     protected Converter nextInChain;
 
-    public ConvertedDistance convert(DistanceToConvert distance){
+    public ConvertedDistance convert(DistanceToConvert distance) {
 
-        if (accept(distance)){
-            double currentValue = convert(distance.getCurrentValue());
+        if (accept(distance)) {
             double convertedValue = convert(distance.getCurrentValue());
-            return new ConvertedDistance(currentValue, distance.getCurrentUnit(), distance.getDestinyUnit(), convertedValue);
-        }else {
+            return new ConvertedDistance(distance.getDestinyUnit(), convertedValue);
+        } else {
             return nextInChain.convert(distance);
         }
     }

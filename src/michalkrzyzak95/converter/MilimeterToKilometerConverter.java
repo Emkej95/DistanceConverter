@@ -10,7 +10,7 @@ public class MilimeterToKilometerConverter extends Converter {
 
     @Override
     protected double convert(Double distance) {
-        return 0;
+        return distance*1000000;
     }
 
     @Override

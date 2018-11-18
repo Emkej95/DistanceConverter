@@ -10,7 +10,7 @@ public class KilometerToMeterConverter extends Converter {
 
     @Override
     protected double convert(Double distance) {
-        return 0;
+        return distance/1000;
     }
 
     @Override

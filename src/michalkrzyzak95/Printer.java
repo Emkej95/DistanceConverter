@@ -11,7 +11,7 @@ public class Printer {
     }
 
     public void printConvertedDistance (ConvertedDistance convertedDistance){
-        System.out.println(convertedDistance.getCurrentValue() + " " + convertedDistance.getCurrentUnit() + " equals " + convertedDistance.getConvertedValue() + " " + convertedDistance.getDestinyUnit());
+        System.out.println(convertedDistance.getConvertedValue() + " " + convertedDistance.getDestinyUnit());
     }
 
 }

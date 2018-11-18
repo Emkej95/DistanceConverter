@@ -10,7 +10,7 @@ public class CentimeterToMilimeterConverter extends Converter {
 
     @Override
     protected double convert(Double distance) {
-        return 0;
+        return distance*10;
     }
 
     @Override

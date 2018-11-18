@@ -10,7 +10,7 @@ public class KilometerToCentimeterConverter extends Converter {
 
     @Override
     protected double convert(Double distance) {
-        return 0;
+        return distance/100000;
     }
 
     @Override
