@@ -6,7 +6,7 @@ import michalkrzyzak95.model.Unit;
 public class KilometerToMilimeterConverter extends Converter {
 
     private static final Unit unitIn = Unit.KILOMETER;
-    private static final Unit unitOut = Unit.MILIMETER;
+    private static final Unit unitOut = Unit.MILLIMETER;
 
     @Override
     protected double convert(Double distance) {

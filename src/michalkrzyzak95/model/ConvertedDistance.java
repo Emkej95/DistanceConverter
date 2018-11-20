@@ -22,8 +22,4 @@ public class ConvertedDistance {
         return convertedValue;
     }
 
-    public void setConvertedValue(double convertedValue) {
-        this.convertedValue = convertedValue;
-    }
-
 }

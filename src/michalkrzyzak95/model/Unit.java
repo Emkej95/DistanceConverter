@@ -5,7 +5,7 @@ public enum Unit {
 
     METER("m", "meter"),
     CENTIMETER("cm", "centimeter"),
-    MILIMETER("mm", "milimeter"),
+    MILLIMETER("mm", "millimeter"),
     KILOMETER("km", "kilometer");
     // FullName możesz wykorzystać do drukowania.
     // Najpierw zrób ja ja, bez wprowadzania, tylko na szytwno zobacz czy działa kod.

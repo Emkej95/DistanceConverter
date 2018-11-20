@@ -2,12 +2,12 @@ package michalkrzyzak95;
 
 import michalkrzyzak95.converter.*;
 
-public class ChainFactory {
+class ChainFactory {
 
-    public Converter getChain(){
+    Converter getChain(){
 
         Converter mToCm = new MeterToCentimeterConverter();
-        Converter mToMm = new MeterToMilimeterConverter();
+        Converter mToMm = new MeterToMillimeterConverter();
         Converter mToKm = new MeterToKilometerConverter();
         Converter cmToKm = new CentimeterToKilometerConverter();
         Converter cmToM = new CentimeterToMeterConverter();
@@ -15,9 +15,9 @@ public class ChainFactory {
         Converter kmToM = new KilometerToMeterConverter();
         Converter kmToCm = new KilometerToCentimeterConverter();
         Converter kmToMm = new KilometerToMilimeterConverter();
-        Converter mmToCm = new MilimeterToCentimeterConverter();
-        Converter mmToM = new MilimeterToMeterConverter();
-        Converter mmToKm = new MilimeterToKilometerConverter();
+        Converter mmToCm = new MillimeterToCentimeterConverter();
+        Converter mmToM = new MillimeterToMeterConverter();
+        Converter mmToKm = new MillimeterToKilometerConverter();
 
         mToCm.setNextInChain(mToMm);
         mToMm.setNextInChain(mToKm);

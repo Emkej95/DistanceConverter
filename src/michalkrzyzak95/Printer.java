@@ -1,17 +1,12 @@
 package michalkrzyzak95;
 
 import michalkrzyzak95.model.ConvertedDistance;
+import michalkrzyzak95.model.Unit;
 
-public class Printer {
+class Printer {
 
-    private ConvertedDistance convertedDistance;
-
-    public void setConvertedDistance (ConvertedDistance convertedDistance){
-        this.convertedDistance = convertedDistance;
-    }
-
-    public void printConvertedDistance (ConvertedDistance convertedDistance){
-        System.out.println(convertedDistance.getConvertedValue() + " " + convertedDistance.getDestinyUnit());
+    void printConvertedDistance(ConvertedDistance convertedDistance){
+        System.out.println(convertedDistance.getConvertedValue() + " " + Unit.getFullName());
     }
 
 }

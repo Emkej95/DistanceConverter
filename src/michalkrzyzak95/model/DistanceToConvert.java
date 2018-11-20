@@ -24,10 +24,6 @@ public class DistanceToConvert {
         return currentValue;
     }
 
-    public void setCurrentValue(double currentValue) {
-        this.currentValue = currentValue;
-    }
-
     public Unit getDestinyUnit() {
         return destinyUnit;
     }

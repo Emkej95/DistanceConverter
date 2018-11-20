@@ -3,14 +3,14 @@ package michalkrzyzak95.converter;
 import michalkrzyzak95.model.DistanceToConvert;
 import michalkrzyzak95.model.Unit;
 
-public class MilimeterToKilometerConverter extends Converter {
+public class MillimeterToMeterConverter extends Converter {
 
-    private static final Unit unitIn = Unit.MILIMETER;
-    private static final Unit unitOut = Unit.KILOMETER;
+    private static final Unit unitIn = Unit.MILLIMETER;
+    private static final Unit unitOut = Unit.METER;
 
     @Override
     protected double convert(Double distance) {
-        return distance*1000000;
+        return distance/1000;
     }
 
     @Override
